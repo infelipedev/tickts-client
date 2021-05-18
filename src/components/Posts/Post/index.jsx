@@ -2,7 +2,7 @@ import { Box, Circle, Heading, HStack, Text } from "@chakra-ui/react";
 
 export const Post = ({ id, body, title }) => {
   return (
-    <Box as="li" borderWidth="1px" padding="4" shadow="md">
+    <Box as="li" borderRadius="md" borderWidth="1px" padding="4" shadow="md">
       <HStack marginBottom="4" spacing="4">
         <Circle
           aria-hidden
