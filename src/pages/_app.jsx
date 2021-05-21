@@ -3,7 +3,6 @@ import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/700.css";
 
 import { ChakraProvider } from "@chakra-ui/react";
-import Head from "next/head";
 import React from "react";
 
 import { theme } from "theme";
@@ -24,9 +23,6 @@ import { theme } from "theme";
 const CustomApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <title>T!CKTS</title>
-      </Head>
       <Component {...pageProps} />
     </ChakraProvider>
   );
