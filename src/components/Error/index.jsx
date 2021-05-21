@@ -2,7 +2,7 @@ import { Center, Text } from "@chakra-ui/react";
 
 import { Icon, IconName, IconType } from "components";
 
-export const Error = ({ message = "Oops, something went wrong!" }) => {
+export const Error = ({ message = "Oops! Algo deu errado..." }) => {
   return (
     <Center flexDirection="column" minHeight="100vh">
       <Icon

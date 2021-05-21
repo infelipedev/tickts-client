@@ -1,14 +1,16 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Container, Heading } from "@chakra-ui/react";
+import Head from "next/head";
 
-export const Layout = ({ children, heading }) => {
+export const Layout = ({ children, title }) => {
   return (
-    <Box backgroundColor="gray.100">
-      <Container as="main" paddingY="8">
-        <Heading as="h1" marginBottom="8">
-          {heading}
-        </Heading>
-        {children}
-      </Container>
-    </Box>
+    <Container as="main" paddingBottom="4" paddingTop="8">
+      <Head>
+        <title>{title} - T!CKTS</title>
+      </Head>
+      <Heading as="h1" fontSize="md" marginBottom="8" textAlign="center">
+        {title}
+      </Heading>
+      {children}
+    </Container>
   );
 };
