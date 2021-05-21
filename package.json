@@ -23,7 +23,7 @@
     "@reach/auto-id": "0.15.0",
     "framer-motion": "4.1.17",
     "next": "10.2.0",
-    "next-plugin-preact": "3.0.4",
+    "next-plugin-preact": "3.0.6",
     "preact": "10.5.13",
     "preact-render-to-string": "5.1.19",
     "react": "npm:@preact/compat@0.0.4",
