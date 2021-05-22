@@ -1,11 +1,9 @@
 import { fetcher } from "utils";
 
-export default async function (_, response) {
-  const events = await fetcher(
-    "https://my-json-server.typicode.com/infelipedev/tickts-mocked-server/events"
-  );
+export default async function (_, res) {
+  const events = await fetcher(`${process.env.BASE_URL}/events`);
 
-  return response.status(200).json(
+  return res.status(200).json(
     events.reduce((events, event) => {
       const { maximumAttendeeCapacity } = event;
 

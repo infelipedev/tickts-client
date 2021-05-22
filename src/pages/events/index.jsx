@@ -1,4 +1,4 @@
-import { Error, Layout, Loading, Events } from "components";
+import { Error, Events, Layout, Loading } from "components";
 import { useEvents } from "hooks";
 import { fetcher } from "utils";
 
@@ -20,11 +20,10 @@ const EventsPage = ({ initialData }) => {
   );
 };
 
-export const getServerSideProps = async ({ req }) => {
-  const { host } = req.headers;
-  const protocol = host.startsWith("localhost") ? "http" : "https";
-
-  const events = await fetcher(`${protocol}://${host}/api/events`);
+export const getServerSideProps = async () => {
+  const events = await fetcher(
+    `${process.env.API_ROUTE_ABSOLUTE_URL}/api/events`
+  );
 
   return { props: { initialData: { events } } };
 };

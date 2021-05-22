@@ -3,7 +3,7 @@ import { Box, Heading, HStack } from "@chakra-ui/react";
 import { Badge, Icon, IconName, Image } from "components";
 
 export const Event = ({
-  image = "/event-image-placeholder.svg",
+  banner = "/event-banner-placeholder.svg",
   name,
   truncatedAttendeeCapacity,
 }) => {
@@ -20,7 +20,7 @@ export const Event = ({
           borderTopRadius="md"
           layout="fill"
           objectFit="cover"
-          src={image}
+          src={banner}
         />
       </Box>
       <HStack padding="4" spacing="auto">
