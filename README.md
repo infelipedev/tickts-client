@@ -3,7 +3,7 @@
 First, install the dependencies:
 
 ```bash
-npm ci --legacy-peer-deps
+npm ci
 ```
 
 Then, run the development server:
