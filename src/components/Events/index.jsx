@@ -11,7 +11,6 @@ export const Events = ({ events = [] }) => {
           <Link key={id} href={`/events/${id}`} passHref>
             <Box as="a" width="100%">
               <Event
-                id={id}
                 attendeeCapacity={truncatedAttendeeCapacity}
                 banner={banner}
                 name={name}
