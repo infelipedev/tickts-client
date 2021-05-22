@@ -3,9 +3,9 @@ import { Box, Heading, HStack } from "@chakra-ui/react";
 import { Badge, Icon, IconName, Image } from "components";
 
 export const Event = ({
+  attendeeCapacity,
   banner = "/event-banner-placeholder.svg",
   name,
-  truncatedAttendeeCapacity,
 }) => {
   return (
     <Box
@@ -28,7 +28,7 @@ export const Event = ({
         <Badge
           colorScheme="blue"
           leftDecoration={<Icon name={IconName.TICKET} />}
-          text={truncatedAttendeeCapacity}
+          text={attendeeCapacity}
         />
       </HStack>
     </Box>

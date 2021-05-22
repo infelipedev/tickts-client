@@ -12,9 +12,9 @@ export const Events = ({ events = [] }) => {
             <Box as="a" width="100%">
               <Event
                 id={id}
+                attendeeCapacity={truncatedAttendeeCapacity}
                 banner={banner}
                 name={name}
-                truncatedAttendeeCapacity={truncatedAttendeeCapacity}
               />
             </Box>
           </Link>

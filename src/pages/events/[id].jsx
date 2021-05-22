@@ -23,9 +23,9 @@ const EventPage = ({ initialData }) => {
   return (
     <Layout title="Eventos">
       <Event
+        attendeeCapacity={maximumAttendeeCapacity}
         banner={banner}
         name={name}
-        truncatedAttendeeCapacity={maximumAttendeeCapacity}
       />
     </Layout>
   );
