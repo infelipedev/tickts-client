@@ -1,9 +1,9 @@
 import { fetcher } from "utils";
 
-export default async function (_, res) {
+export default async function (_, response) {
   const events = await fetcher(`${process.env.BASE_URL}/events`);
 
-  return res.status(200).json(
+  return response.status(200).json(
     events.reduce((events, event) => {
       const { maximumAttendeeCapacity } = event;
 

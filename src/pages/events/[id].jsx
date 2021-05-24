@@ -21,7 +21,7 @@ const EventPage = ({ initialData }) => {
   } = event.data;
 
   return (
-    <Layout title="Eventos">
+    <Layout title={name}>
       <Event
         attendeeCapacity={maximumAttendeeCapacity}
         banner={banner}
