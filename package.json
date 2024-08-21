@@ -12,8 +12,8 @@
 	},
 	"dependencies": {
 		"@chakra-ui/react": "1.6.2",
-		"@emotion/react": "11.4.0",
-		"@emotion/styled": "11.3.0",
+		"@emotion/react": "11.13.3",
+		"@emotion/styled": "11.13.0",
 		"@hookform/resolvers": "2.5.1",
 		"@reach/auto-id": "0.15.0",
 		"framer-motion": "4.1.17",
